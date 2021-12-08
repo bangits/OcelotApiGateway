@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "atomaks-77fe"
+    labels:
+        app: "atomaks-77fe"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: rgs-atomaks-77fe.4228bf973350467b8523.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "atomaks-77fe"
+                servicePort: 80
