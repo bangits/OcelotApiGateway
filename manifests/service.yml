@@ -5,11 +5,15 @@ metadata:
     labels:
         app: "atomaks-77fe"
 spec:
-    type: ClusterIP
+    type: LoadBalancer
     ports:
     - port: 80
       targetPort: 80
       protocol: TCP
       name: http
+    - port: 82
+      targetPort: 82
+      protocol: TCP
+      name: http2
     selector:
         app: "atomaks-77fe"
