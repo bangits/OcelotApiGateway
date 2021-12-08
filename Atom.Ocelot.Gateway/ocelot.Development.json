@@ -1,0 +1,57 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/{everything}/{action}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44373
+        }
+      ],
+      "UpstreamPathTemplate": "/rival/{everything}/{action}",
+      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44374
+        }
+      ],
+      "UpstreamPathTemplate": "/rival/{url}",
+      "UpstreamHttpMethod": [ "Get", "POST", "Put", "Delete" ],
+      "RouteIsCaseSensitive": true,
+      "Key": "withdraws",
+      "DangerousAcceptAnyServerCertificateValidator": true
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "rival",
+      "Config": [
+        {
+          "Name": "rival API",
+          "Url": "https://localhost:44373/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "withdraws",
+      "Config": [
+        {
+          "Name": "withdraws API",
+          "Url": "https://localhost:44374/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 7018
+    }
+  }
+}
