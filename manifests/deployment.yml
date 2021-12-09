@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "atomaks-b0f6"
+  name: "ocelot-gateway"
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "atomaks-b0f6"
+      app: "ocelot-gateway"
   template:
     metadata:
       labels:
-        app: "atomaks-b0f6"
+        app: "ocelot-gateway"
     spec:
       containers:
-        - name: "atomaks-b0f6"
+        - name: "ocelot-gateway"
           image: "aksatom.azurecr.io/atomaks"
           ports:
           - containerPort: 80
