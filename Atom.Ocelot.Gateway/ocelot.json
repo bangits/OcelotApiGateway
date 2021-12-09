@@ -2,11 +2,11 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/v1/{everything}/{action}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44373
+          "Host": "52.143.74.18",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/rival/{everything}/{action}",
@@ -33,8 +33,8 @@
       "Key": "rival",
       "Config": [
         {
-          "Name": "rival API",
-          "Url": "https://localhost:44373/swagger/v1/swagger.json"
+          "Name": "Game Launcher API",
+          "Url": "http://52.143.74.18/swagger/v1/swagger.json"
         }
       ]
     },

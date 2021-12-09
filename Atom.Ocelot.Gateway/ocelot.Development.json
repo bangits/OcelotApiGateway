@@ -1,49 +1,52 @@
 ﻿{
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/{everything}/{action}",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/api/v1/rival/gameLaunch",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44373
+          "Host": "52.143.74.18",
+          "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/rival/{everything}/{action}",
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/srv/rival/gameLaunch",
       "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/{url}",
-      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/api/v1/rival/validate",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44374
+          "Host": "52.143.74.18",
+          "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/rival/{url}",
-      "UpstreamHttpMethod": [ "Get", "POST", "Put", "Delete" ],
-      "RouteIsCaseSensitive": true,
-      "Key": "withdraws",
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/srv/rival/validate",
+      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/rival/getbalance",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "52.143.74.18",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/srv/rival/getbalance",
+      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
     }
   ],
   "SwaggerEndPoints": [
     {
-      "Key": "rival",
+      "Key": "game-launchers",
       "Config": [
         {
-          "Name": "rival API",
-          "Url": "https://localhost:44373/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "withdraws",
-      "Config": [
-        {
-          "Name": "withdraws API",
-          "Url": "https://localhost:44374/swagger/v1/swagger.json"
+          "Name": "Game Launcher API",
+          "Url": "http://52.143.74.18/swagger/v1/swagger.json"
         }
       ]
     }
