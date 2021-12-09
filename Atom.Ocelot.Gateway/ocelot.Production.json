@@ -10,7 +10,7 @@
         }
       ],
       "Key": "game-launchers",
-      "UpstreamPathTemplate": "/srv/rival/gameLaunch",
+      "UpstreamPathTemplate": "/serv/Rival/gameLaunch",
       "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
     },
     {
@@ -23,7 +23,7 @@
         }
       ],
       "Key": "game-launchers",
-      "UpstreamPathTemplate": "/srv/rival/validate",
+      "UpstreamPathTemplate": "/serv/Rival/validate",
       "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
     },
     {
@@ -36,7 +36,7 @@
         }
       ],
       "Key": "game-launchers",
-      "UpstreamPathTemplate": "/srv/rival/getbalance",
+      "UpstreamPathTemplate": "/serv/Rival/getbalance",
       "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
     }
   ],
