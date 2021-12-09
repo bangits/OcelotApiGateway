@@ -1,7 +1,7 @@
 ﻿{
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/rival/gameLaunch",
+      "DownstreamPathTemplate": "/api/v1/rival/{query}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -10,33 +10,7 @@
         }
       ],
       "Key": "game-launchers",
-      "UpstreamPathTemplate": "/serv/Rival/gameLaunch",
-      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/rival/validate",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "52.143.74.18",
-          "Port": 80
-        }
-      ],
-      "Key": "game-launchers",
-      "UpstreamPathTemplate": "/serv/Rival/validate",
-      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/rival/getbalance",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "52.143.74.18",
-          "Port": 80
-        }
-      ],
-      "Key": "game-launchers",
-      "UpstreamPathTemplate": "/serv/Rival/getbalance",
+      "UpstreamPathTemplate": "/serv/Rival?jsoncall={query}",
       "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
     }
   ],

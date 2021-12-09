@@ -1,7 +1,7 @@
 ﻿{
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/{everything}/{action}",
+      "DownstreamPathTemplate": "/api/v1/rival/{query}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -9,41 +9,18 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/rival/{everything}/{action}",
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/serv/Rival?jsoncall={query}",
       "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/{url}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 44374
-        }
-      ],
-      "UpstreamPathTemplate": "/rival/{url}",
-      "UpstreamHttpMethod": [ "Get", "POST", "Put", "Delete" ],
-      "RouteIsCaseSensitive": true,
-      "Key": "withdraws",
-      "DangerousAcceptAnyServerCertificateValidator": true
     }
   ],
   "SwaggerEndPoints": [
     {
-      "Key": "rival",
+      "Key": "game-launchers",
       "Config": [
         {
           "Name": "Game Launcher API",
           "Url": "http://52.143.74.18/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
-      "Key": "withdraws",
-      "Config": [
-        {
-          "Name": "withdraws API",
-          "Url": "https://localhost:44374/swagger/v1/swagger.json"
         }
       ]
     }
