@@ -1,6 +1,23 @@
 ﻿{
   "Routes": [
     {
+      "DownstreamPathTemplate": "/api/v1/rival/updatebalance",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44374
+        }
+      ],
+      "Key": "withdrawintegrator",
+      "UpstreamPathTemplate": "/serv/Rival?jsoncall=updatebalance",
+      "UpstreamHttpMethod": [
+        "POST",
+        "Put",
+        "Delete"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/rival/{query}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -11,7 +28,11 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/serv/Rival?jsoncall={query}",
-      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
+      "UpstreamHttpMethod": [
+        "POST",
+        "Put",
+        "Delete"
+      ]
     }
   ],
   "SwaggerEndPoints": [
@@ -21,6 +42,15 @@
         {
           "Name": "Game Launcher API",
           "Url": "http://52.143.74.18/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "withdrawintegrator",
+      "Config": [
+        {
+          "Name": "Withdraw integrator API",
+          "Url": "https://localhost:44374/swagger/v1/swagger.json"
         }
       ]
     }
