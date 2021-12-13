@@ -23,7 +23,7 @@
         }
       ],
       "Key": "game-launchers",
-      "UpstreamPathTemplate": "/api/v1/user/{query}",
+      "UpstreamPathTemplate": "/api/user/{query}",
       "UpstreamHttpMethod": [ "POST", "Put", "Delete", "Get" ]
     }
   ],
