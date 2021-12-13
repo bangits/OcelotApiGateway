@@ -5,7 +5,7 @@ metadata:
     labels:
         app: "atom-81db"
 spec:
-    type: LoadBalancer
+    type: ClusterIP
     ports:
     - port: 80
       targetPort: 80
