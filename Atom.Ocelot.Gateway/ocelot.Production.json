@@ -1,4 +1,4 @@
-﻿{
+{
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/v1/rival/updatebalance",
@@ -28,7 +28,7 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/serv/Rival?jsoncall={query}",
-      "UpstreamHttpMethod": [ "POST", "Put","GET", "Delete" ]
+      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
     }
   ],
   "SwaggerEndPoints": [
