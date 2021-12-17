@@ -28,7 +28,7 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/serv/Rival?jsoncall={query}",
-      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
+      "UpstreamHttpMethod": [ "POST", "Put","GET", "Delete" ]
     }
   ],
   "SwaggerEndPoints": [
