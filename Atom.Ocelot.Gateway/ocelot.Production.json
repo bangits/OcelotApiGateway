@@ -28,7 +28,42 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/serv/Rival?jsoncall={query}",
-      "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
+      "UpstreamHttpMethod": [
+        "POST",
+        "Put",
+        "Delete"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/BGaming/Play",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "20.72.198.207",
+          "Port": 80
+        }
+      ],
+      "Key": "withdrawintegrator",
+      "UpstreamPathTemplate": "/serv/BGaming/play",
+      "UpstreamHttpMethod": [
+        "POST",
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/gameLaunch",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "52.143.74.18",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/serv/BGaming/gameLaunch",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
     }
   ],
   "SwaggerEndPoints": [
