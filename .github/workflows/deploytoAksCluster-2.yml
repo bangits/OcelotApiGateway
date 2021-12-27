@@ -42,8 +42,8 @@ jobs:
       with:
         namespace: default
         manifests: |
-          manifests/deployment-1.yml
-          manifests/service-1.yml
+          manifests/deployment-2.yml
+          manifests/service-2.yml
         images: |
           acratom.azurecr.io/atom:${{ github.sha }}
         imagepullsecrets: |
