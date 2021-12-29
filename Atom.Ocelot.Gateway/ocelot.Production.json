@@ -33,37 +33,6 @@
         "Put",
         "Delete"
       ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/BGaming/Play",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "20.99.153.170",
-          "Port": 80
-        }
-      ],
-      "Key": "withdrawintegrator",
-      "UpstreamPathTemplate": "/serv/BGaming/play",
-      "UpstreamHttpMethod": [
-        "POST",
-        "GET"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/gameLaunch",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "40.125.120.45",
-          "Port": 80
-        }
-      ],
-      "Key": "game-launchers",
-      "UpstreamPathTemplate": "/serv/BGaming/gameLaunch",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
     }
   ],
   "SwaggerEndPoints": [
