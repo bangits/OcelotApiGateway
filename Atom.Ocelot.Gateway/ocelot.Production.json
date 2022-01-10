@@ -18,6 +18,23 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/v1/rival/rollback",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "20.72.198.207",
+          "Port": 80
+        }
+      ],
+      "Key": "withdrawintegrator",
+      "UpstreamPathTemplate": "/serv/Rival?jsoncall=rollback",
+      "UpstreamHttpMethod": [
+        "POST",
+        "Put",
+        "Delete"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/rival/{query}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
