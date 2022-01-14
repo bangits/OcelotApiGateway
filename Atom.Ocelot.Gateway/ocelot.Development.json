@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "20.72.198.207",
+          "Host": "52.149.49.221",
           "Port": 80
         }
       ],
@@ -18,11 +18,43 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/v1/rival/rollback",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "52.149.49.221",
+          "Port": 80
+        }
+      ],
+      "Key": "withdrawintegrator",
+      "UpstreamPathTemplate": "/serv/Rival?jsoncall=rollback",
+      "UpstreamHttpMethod": [
+        "POST",
+        "Put",
+        "Delete"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/BGaming/play",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "52.149.49.221",
+          "Port": 80
+        }
+      ],
+      "Key": "withdrawintegrator",
+      "UpstreamPathTemplate": "/serv/BGaming/play",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/rival/{query}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "52.143.74.18",
+          "Host": "51.143.121.28",
           "Port": 80
         }
       ],
@@ -30,40 +62,9 @@
       "UpstreamPathTemplate": "/serv/Rival?jsoncall={query}",
       "UpstreamHttpMethod": [
         "POST",
+        "GET",
         "Put",
         "Delete"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/BGaming/Play",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "20.72.198.207",
-          "Port": 80
-        }
-      ],
-      "Key": "withdrawintegrator",
-      "UpstreamPathTemplate": "/serv/BGaming/Play",
-      "UpstreamHttpMethod": [
-        "POST",
-        "Put",
-        "Delete"
-      ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/gameLaunch",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "52.143.74.18",
-          "Port": 80
-        }
-      ],
-      "Key": "game-launchers",
-      "UpstreamPathTemplate": "/serv/BGaming/gameLaunch",
-      "UpstreamHttpMethod": [
-        "POST"
       ]
     }
   ],
@@ -73,7 +74,7 @@
       "Config": [
         {
           "Name": "Game Launcher API",
-          "Url": "http://52.143.74.18/swagger/v1/swagger.json"
+          "Url": "http://51.143.121.28/swagger/v1/swagger.json"
         }
       ]
     },
@@ -82,7 +83,7 @@
       "Config": [
         {
           "Name": "Withdraw integrator API",
-          "Url": "http://20.72.198.207/swagger/v1/swagger.json"
+          "Url": "http://52.149.49.221/swagger/v1/swagger.json"
         }
       ]
     }
