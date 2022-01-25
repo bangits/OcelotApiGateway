@@ -50,6 +50,21 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/v1/BGaming/Rollback",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "52.149.49.221",
+          "Port": 80
+        }
+      ],
+      "Key": "withdrawintegrator",
+      "UpstreamPathTemplate": "/serv/BGaming/rollback",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/rival/{query}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
