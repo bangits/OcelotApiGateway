@@ -81,6 +81,21 @@
         "Put",
         "Delete"
       ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/GoldenRace/{query}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "51.143.121.28",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/{query}",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
     }
   ],
   "SwaggerEndPoints": [
