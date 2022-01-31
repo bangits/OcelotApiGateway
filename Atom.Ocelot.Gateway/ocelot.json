@@ -38,7 +38,7 @@
         }
       ],
       "Key": "game-launchers",
-      "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/login",
+      "UpstreamPathTemplate": "/serve/GoldenRace/Xpress/login",
       "UpstreamHttpMethod": [
         "POST"
       ]
