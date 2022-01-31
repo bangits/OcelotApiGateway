@@ -96,6 +96,21 @@
       "UpstreamHttpMethod": [
         "POST"
       ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/GoldenRace/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "51.143.121.28",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/login",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
     }
   ],
   "SwaggerEndPoints": [
