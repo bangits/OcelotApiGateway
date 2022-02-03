@@ -14,7 +14,7 @@
       "UpstreamHttpMethod": [ "POST", "Put", "Delete" ]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/GoldenRace/{query}",
+      "DownstreamPathTemplate": "/api/v1/GoldenRace/logout",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -23,7 +23,37 @@
         }
       ],
       "Key": "game-launchers",
-      "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/{query}",
+      "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/logout",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/GoldenRace/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "51.143.121.28",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/login",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/GoldenRace/balance",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "51.143.121.28",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/balance",
       "UpstreamHttpMethod": [
         "POST"
       ]
