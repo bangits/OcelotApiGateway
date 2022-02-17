@@ -83,6 +83,24 @@
       ]
     },
     {
+      "DownstreamPathTemplate": "/api/v1/GameLaunch/Logout?sessionId={sessionValue}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "51.143.121.28",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/gamelaunch/logout?sessionId={sessionValue}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "GET",
+        "Put",
+        "Delete"
+      ]
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/GoldenRace/logout",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
