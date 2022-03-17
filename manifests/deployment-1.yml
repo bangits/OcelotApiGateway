@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "atomconstruct-ccb3"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "atomconstruct-ccb3"
+  template:
+    metadata:
+      labels:
+        app: "atomconstruct-ccb3"
+    spec:
+      containers:
+        - name: "atomconstruct-ccb3"
+          image: "atomconstructacr.azurecr.io/atomconstruct"
+          ports:
+          - containerPort: 80
