@@ -4,7 +4,7 @@
       "DownstreamPathTemplate": "/api/v1/rival/{query}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
-        {
+        { 
           "Host": "52.143.74.18",
           "Port": 80
         }
