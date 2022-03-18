@@ -249,6 +249,62 @@
       "UpstreamHttpMethod": [
         "POST"
       ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/hub/user/balance",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "20.72.198.207",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/serv/hub88/user/balance",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/hub/user/info",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "20.72.198.207",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/serv/hub88/user/info",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/hub/transaction/win",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "20.72.198.207",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/serv/hub88/transaction/win",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/hub/transaction/bet",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "20.72.198.207",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/serv/hub88/transaction/bet",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
     }
   ],
   "SwaggerEndPoints": [
