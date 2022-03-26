@@ -5,7 +5,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -22,7 +22,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -39,7 +39,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -54,7 +54,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -69,7 +69,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/gamelauncher",
+          "Host": "atomconstruct.com/gamelauncher",
           "Port": 80
         }
       ],
@@ -87,7 +87,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/gamelauncher",
+          "Host": "atomconstruct.com/gamelauncher",
           "Port": 80
         }
       ],
@@ -105,7 +105,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/gamelauncher",
+          "Host": "atomconstruct.com/gamelauncher",
           "Port": 80
         }
       ],
@@ -120,7 +120,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/gamelauncher",
+          "Host": "atomconstruct.com/gamelauncher",
           "Port": 80
         }
       ],
@@ -135,7 +135,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/gamelauncher",
+          "Host": "atomconstruct.com/gamelauncher",
           "Port": 80
         }
       ],
@@ -150,7 +150,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -165,7 +165,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -180,7 +180,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -195,7 +195,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -210,7 +210,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -225,7 +225,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -240,7 +240,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com/integrator",
+          "Host": "atomconstruct.com/integrator",
           "Port": 80
         }
       ],
@@ -257,7 +257,7 @@
       "Config": [
         {
           "Name": "Game Launcher API",
-          "Url": "https://backoffice.atomconstruct.com/gamelauncher/swagger/v1/swagger.json"
+          "Url": "https://atomconstruct.com/gamelauncher/swagger/v1/swagger.json"
         }
       ]
     },
@@ -266,7 +266,7 @@
       "Config": [
         {
           "Name": "Withdraw integrator API",
-          "Url": "https://backoffice.atomconstruct.com/integrator/swagger/v1/swagger.json"
+          "Url": "https://atomconstruct.com/integrator/swagger/v1/swagger.json"
         }
       ]
     }
