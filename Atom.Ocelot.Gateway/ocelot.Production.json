@@ -2,7 +2,7 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/integrator/api/v1/rival/updatebalance",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -19,7 +19,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/rival/rollback",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -36,10 +36,11 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/BGaming/play",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com"
+          "Host": "backoffice.atomconstruct.com",
+          "Port": 80
         }
       ],
       "Key": "withdrawintegrator",
@@ -50,7 +51,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/BGaming/Rollback",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -65,7 +66,7 @@
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/rival/{query}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -83,7 +84,7 @@
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/GameLaunch/Logout?sessionId={sessionValue}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -101,7 +102,7 @@
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/GoldenRace/logout",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -116,7 +117,7 @@
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/GoldenRace/login",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -131,7 +132,7 @@
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/GoldenRace/balance",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -146,7 +147,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/GoldenRace/debit",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -161,7 +162,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/GoldenRace/credit",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -176,7 +177,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/GoldenRace/rollback",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -191,7 +192,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/FunTa/Balance",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -206,7 +207,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/FunTa/Debit",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -221,7 +222,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/FunTa/Credit",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -236,7 +237,7 @@
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/FunTa/Rollback",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "backoffice.atomconstruct.com",
@@ -256,7 +257,7 @@
       "Config": [
         {
           "Name": "Game Launcher API",
-          "Url": "https://backoffice.atomconstruct.com/gamelauncher/swagger/v1/swagger.json"
+          "Url": "http://backoffice.atomconstruct.com/gamelauncher/swagger/v1/swagger.json"
         }
       ]
     },
@@ -265,7 +266,7 @@
       "Config": [
         {
           "Name": "Withdraw integrator API",
-          "Url": "https://backoffice.atomconstruct.com/integrator/swagger/v1/swagger.json"
+          "Url": "http://backoffice.atomconstruct.com/integrator/swagger/v1/swagger.json"
         }
       ]
     }
