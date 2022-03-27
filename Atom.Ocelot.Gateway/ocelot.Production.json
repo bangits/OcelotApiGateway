@@ -39,8 +39,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "backoffice.atomconstruct.com",
-          "Port": 80
+          "Host": "backoffice.atomconstruct.com"
         }
       ],
       "Key": "withdrawintegrator",
