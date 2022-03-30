@@ -11,11 +11,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/Rival?jsoncall=updatebalance",
-      "UpstreamHttpMethod": [
-        "POST",
-        "Put",
-        "Delete"
-      ]
+      "UpstreamHttpMethod": ["POST", "Put", "Delete"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/rival/rollback",
@@ -28,11 +24,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/Rival?jsoncall=rollback",
-      "UpstreamHttpMethod": [
-        "POST",
-        "Put",
-        "Delete"
-      ]
+      "UpstreamHttpMethod": ["POST", "Put", "Delete"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/BGaming/play",
@@ -45,9 +37,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/BGaming/play",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/BGaming/Rollback",
@@ -60,9 +50,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/BGaming/rollback",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/rival/{query}",
@@ -75,12 +63,7 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/serv/Rival?jsoncall={query}",
-      "UpstreamHttpMethod": [
-        "POST",
-        "GET",
-        "Put",
-        "Delete"
-      ]
+      "UpstreamHttpMethod": ["POST", "GET", "Put", "Delete"]
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/GameLaunch/Logout?sessionId={sessionValue}",
@@ -93,12 +76,7 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/gamelaunch/logout?sessionId={sessionValue}",
-      "UpstreamHttpMethod": [
-        "POST",
-        "GET",
-        "Put",
-        "Delete"
-      ]
+      "UpstreamHttpMethod": ["POST", "GET", "Put", "Delete"]
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/GoldenRace/logout",
@@ -111,9 +89,7 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/logout",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/GoldenRace/login",
@@ -126,9 +102,7 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/login",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/gamelauncher/api/v1/GoldenRace/balance",
@@ -141,9 +115,7 @@
       ],
       "Key": "game-launchers",
       "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/balance",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/GoldenRace/debit",
@@ -156,9 +128,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/debit",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/GoldenRace/credit",
@@ -171,9 +141,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/credit",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/GoldenRace/rollback",
@@ -186,9 +154,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/GoldenRace/Xpress/rollback",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/FunTa/Balance",
@@ -201,9 +167,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/funta/getbalance",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/FunTa/Debit",
@@ -216,9 +180,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/funta/debit",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/FunTa/Credit",
@@ -231,9 +193,7 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/funta/credit",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
     },
     {
       "DownstreamPathTemplate": "/integrator/api/v1/FunTa/Rollback",
@@ -246,9 +206,59 @@
       ],
       "Key": "withdrawintegrator",
       "UpstreamPathTemplate": "/serv/funta/rollback",
-      "UpstreamHttpMethod": [
-        "POST"
-      ]
+      "UpstreamHttpMethod": ["POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/integrator/api/v1/Hub/balance",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "backoffice.atomconstruct.com",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/serv/hub88/balance",
+      "UpstreamHttpMethod": ["POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/integrator/api/v1/Hub/info",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "backoffice.atomconstruct.com",
+          "Port": 80
+        }
+      ],
+      "Key": "game-launchers",
+      "UpstreamPathTemplate": "/serv/hub88/info",
+      "UpstreamHttpMethod": ["POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/integrator/api/v1/Hub/win",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "backoffice.atomconstruct.com",
+          "Port": 80
+        }
+      ],
+      "Key": "withdrawintegrator",
+      "UpstreamPathTemplate": "/serv/hub88/win",
+      "UpstreamHttpMethod": ["POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/integrator/api/v1/Hub/bet",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "backoffice.atomconstruct.com",
+          "Port": 80
+        }
+      ],
+      "Key": "withdrawintegrator",
+      "UpstreamPathTemplate": "/serv/hub88/bet",
+      "UpstreamHttpMethod": ["POST"]
     }
   ],
   "SwaggerEndPoints": [
